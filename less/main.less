@@ -1,5 +1,63 @@
 @import 'mixins';
 
-#index {
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+body{
     font-family: @primary-font;
 }
+
+nav {
+    height: 10%;
+    background-color: @yellow;
+
+    ul {
+        text-decoration: none;
+        padding: 2%;
+        margin-bottom: 0;
+
+        li{
+            display: inline-block;
+            padding: 2%;
+        }
+
+        span{
+            .span();
+        }
+    }
+}
+
+header{
+    background-image: url("../img/banner-bg-logo.png");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    button {
+        top: 50%;
+        position: absolute;
+    }
+}
+
+.btn-primary {
+    background-color: @yellow;
+    color: @black;
+    border-color: @yellow;
+    text-transform: uppercase;
+    
+    &:hover{
+        background-color: @white;
+        color: @black;
+        border-color: @white;
+    }
+}
+
+h1 {
+    display: none;
+}
+
+
+
