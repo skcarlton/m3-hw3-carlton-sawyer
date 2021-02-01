@@ -9,6 +9,14 @@
   text-transform: uppercase;
   color: #ee252f;
 }
+.section-padding {
+  padding: 3%;
+  padding-left: 8%;
+}
+.heading {
+  text-transform: uppercase;
+  font-weight: 500;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +24,10 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+}
+body span {
+  text-transform: uppercase;
+  color: #ee252f;
 }
 nav {
   height: 10%;
@@ -30,10 +42,6 @@ nav ul li {
   display: inline-block;
   padding: 2%;
 }
-nav ul span {
-  text-transform: uppercase;
-  color: #ee252f;
-}
 header {
   background-image: url("../img/banner-bg-logo.png");
   height: 50vh;
@@ -43,6 +51,9 @@ header {
 header button {
   top: 50%;
   position: absolute;
+}
+.row {
+  margin: 0;
 }
 .btn-primary {
   background-color: #f8df1f;
@@ -57,4 +68,36 @@ header button {
 }
 h1 {
   display: none;
+}
+section {
+  padding: 3%;
+  padding-left: 8%;
+}
+section h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section img {
+  width: 60%;
+}
+.second {
+  background-color: #f3f3f3;
+}
+.line {
+  height: 2vh;
+  background-color: #f8df1f;
+}
+footer {
+  background-color: #080801;
+  padding: 3%;
+  padding-left: 8%;
+}
+footer img {
+  width: 30%;
+}
+@media (max-width: 575px) {
+  section img {
+    width: 40%;
+    padding: 2%;
+  }
 }
